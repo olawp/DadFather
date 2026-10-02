@@ -1,7 +1,7 @@
 # BobDad 💀
 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 A small Discord bot scaffold built with TypeScript and `discord.js`.
-
+skullblunc
 ## Setup
 
 1. Create an application and bot at <https://discord.com/developers/applications>.

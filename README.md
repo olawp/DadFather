@@ -1,4 +1,4 @@
-# BobDad
+# BobDad💀
 
 A small Discord bot scaffold built with TypeScript and `discord.js`.
 

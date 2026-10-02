@@ -4,11 +4,15 @@ export const data = new SlashCommandBuilder()
   .setName('mog')
   .setDescription('Post a random mogging GIF.');
 
-function getGifUrls(): string[] {
-  return (process.env.MOG_GIF_URLS ?? '')
+export function parseGifUrls(value: string | undefined): string[] {
+  return (value ?? '')
     .split(',')
     .map((url) => url.trim())
     .filter(Boolean);
+}
+
+function getGifUrls(): string[] {
+  return parseGifUrls(process.env.MOG_GIF_URLS);
 }
 
 export async function execute(interaction: ChatInputCommandInteraction): Promise<void> {

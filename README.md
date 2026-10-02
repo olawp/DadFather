@@ -31,6 +31,8 @@ bun run build
 bun run start
 ```
 
+GitHub Actions builds the Alpine Docker image automatically for pull requests targeting `main` and for pushes to `main`. The workflow is in `.github/workflows/docker-build.yml`.
+
 Invite the bot with the `bot` and `applications.commands` scopes. The starter commands are `/ping`, `/hello`, `/forever`, and `/mog`.
 
 Configure `/mog` by adding direct GIF URLs to `.env`, separated by commas:
